@@ -25,3 +25,4 @@ if __name__ == '__main__':
     artists = {'Aphex Twin': {'Selected works': ['Xtal', 'Tha', 'Pulsewidth', 'Ageispolis']
                       ,'Selected works II': []}}
     ArtistPrinter().print_album(artists)
+print('hello hallelujah')
