@@ -12,10 +12,16 @@ class ArtistPrinter:
         for artist in artist_dict.keys():
             print(artist)
 
+    @staticmethod
+    def print_album(artist_dict: dict):
+        """This function will print albums in the dictionary!"""
+        for artist in artist_dict.keys():
+            for album in artist_dict[artist].keys():
+                print(album)
+
 
 if __name__ == '__main__':
     # input variable
-    artists = {'Aphex Twin':
-           {'Album': {'Selected works': ['Xtal', 'Tha', 'Pulsewidth', 'Ageispolis']
-                      ,'Selected works II': []}}}
-    ArtistPrinter().print_artist(artists)
+    artists = {'Aphex Twin': {'Selected works': ['Xtal', 'Tha', 'Pulsewidth', 'Ageispolis']
+                      ,'Selected works II': []}}
+    ArtistPrinter().print_album(artists)
