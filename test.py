@@ -30,6 +30,10 @@ class ArtistPrinter:
 
 if __name__ == '__main__':
     # input variable
-    artists = {'Aphex Twin': {'Selected works': ['Xtal', 'Tha', 'Pulsewidth', 'Ageispolis']
-                      ,'Selected works II': ['1']}}
-    ArtistPrinter().print_songs(artists)
+    artists = {'Aphex Twin':
+           {'Album': {'Selected works': ['Xtal', 'Tha', 'Pulsewidth', 'Ageispolis']
+                      ,'Selected works II': []}},
+                      'Tom Waits':
+           {'Album': {'Swordfishtrombones': ['Underground', 'Shore leave']
+                      ,'Rain Dogs': ['Singapore']}}}
+    ArtistPrinter().print_artist(artists)
